@@ -1,6 +1,6 @@
 # CommunicationSys
-卷积码编码解码 QPSK调制解调
-Version 1<br>
+##Version 1
+          `卷积码编码解码 QPSK调制解调`<br>
 1> 随机生成基带数字信号0，1<br>
 2> 对基带数字信号卷积编码<br>
 3> 简易QPSK调制：只将卷积码两两映射为+1和-1，不与正弦信号相乘，<br>
