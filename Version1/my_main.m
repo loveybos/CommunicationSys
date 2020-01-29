@@ -13,7 +13,7 @@ OriCode=[OriCode 0 0 0] ;                  %添加尾比特使编码后状态归零
 ConCode = ConEncode(OriCode, CodeLength)      %3阶卷积编码
 QPSKCode = QPSKEncode(ConCode, CodeLength);      %QPSK调制(不与正弦相乘)
 
-a = 0.1;             %噪声功率W
+a = 1;             %噪声功率W
 p = 10*log10(a);      %将噪声功率W转换为dBW
 NoiseSeq = wgn(1,2*CodeLength,p);             %产生加性高斯白噪声
 RecCode = QPSKCode + NoiseSeq;               %给信号加噪
